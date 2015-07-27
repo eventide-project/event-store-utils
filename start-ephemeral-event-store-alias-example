@@ -1,0 +1,3 @@
+cd ~/tools/EventStore-OSS-Mac-v3.0.3;
+pwd;
+./run-node.sh --run-projections=all
