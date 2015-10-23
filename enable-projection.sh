@@ -4,12 +4,13 @@ set -u
 
 name="$1"
 
-port=${PORT-2113}
+${EVENT_STORE_PORT:=2113}
+
+port=${EVENT_STORE_PORT}
 
 echo
-echo "Enabling $name"
+echo "Enabling $name (Port: $port)"
 echo "- - -"
-echo "Port $port"
 
 if [[ ! "$name" == "users" ]]; then
   name="%24$name"
