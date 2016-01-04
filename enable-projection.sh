@@ -4,9 +4,7 @@ set -u
 
 name="$1"
 
-${EVENT_STORE_PORT:=2113}
-
-port=${EVENT_STORE_PORT}
+port=${EVENT_STORE_PORT:-2113}
 
 echo
 echo "Enabling $name (Port: $port)"
