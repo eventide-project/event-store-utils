@@ -25,10 +25,6 @@ shift
 max_age=${1:-'0'}
 port=${EVENT_STORE_PORT:-2113}
 
-stream_name="%24ce-$category"
-
-pos=0
-
 streams=$(
   curl -s -H 'Accept: application/vnd.eventstore.atom+json' \
     "http://127.0.0.1:${port}/streams/%24streams" |
