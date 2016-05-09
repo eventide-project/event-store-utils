@@ -22,8 +22,8 @@ read -r -d '' json <<'JSON'
         "$r"  : "$all",
         "$w"  : "$admin",
         "$d"  : "$admin",
-        "$mr" : "$admin",
-        "$mw" : "$admin"
+        "$mr" : "$all",
+        "$mw" : "$all"
     }
 }
 JSON
