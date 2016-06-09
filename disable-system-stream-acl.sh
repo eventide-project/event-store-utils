@@ -18,7 +18,7 @@ read -r -d '' json <<'JSON'
         "$mr" : "$all",
         "$mw" : "$all"
     },
-    "$systemStreamAcl" : {
+     "$systemStreamAcl" : {
         "$r"  : "$all",
         "$w"  : "$admin",
         "$d"  : "$admin",
