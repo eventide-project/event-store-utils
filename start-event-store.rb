@@ -153,7 +153,7 @@ module StartEventStore
             options.dry_run = true
           end
 
-          option_parser.on '--host HOST', "Binds EventStore to IP-ADDRESS (default is #{Defaults.host})" do |host|
+          option_parser.on '--host HOST', "Binds EventStore to HOST (default is #{Defaults.host})" do |host|
             options.host = host
           end
 
